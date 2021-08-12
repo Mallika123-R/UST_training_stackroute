@@ -1,0 +1,124 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 33,
+        "name": "Register user on Gmail.com",
+        "description": "",
+        "id": "registering-user;register-user-on-gmail.com;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5003746125,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on gmail.com registeration page",
+            "match": {
+              "location": "Register.iAmOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 727466,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter user1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user1",
+                  "offset": 8
+                }
+              ],
+              "location": "Register.enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 395519,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I enter pass1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pass1",
+                  "offset": 8
+                }
+              ],
+              "location": "Register.enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2786554,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I enter 2222222222",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2222222222",
+                  "offset": 8
+                }
+              ],
+              "location": "Register.enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 803412,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "regiteration should be success",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 23
+                }
+              ],
+              "location": "Register.result(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegisterUser"
+          },
+          {
+            "name": "@Registeration"
+          }
+        ]
+      }
+    ],
+    "name": "Registering User",
+    "description": "I want to register user",
+    "id": "registering-user",
+    "keyword": "Feature",
+    "uri": "D:/Whizdom-Trainings/Online Training Workspace/Recording_Dec17/CucumberBasics/src/test/resources/com/qtpselenium/cucumber/passingparameters.feature",
+    "tags": [
+      {
+        "name": "@RegisterUser",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

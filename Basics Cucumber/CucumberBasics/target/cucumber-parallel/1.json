@@ -1,0 +1,187 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000861012,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I live in Moscow",
+            "match": {
+              "location": "Holiday.i_live_in_Moscow()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2068475,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21st Jan 2018",
+                  "offset": 31
+                },
+                {
+                  "val": "30th Jan 2018",
+                  "offset": 48
+                }
+              ],
+              "location": "Holiday.iTravel(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1452370,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I have a family of 2 adults and 2 kids",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                },
+                {
+                  "val": "2",
+                  "offset": 32
+                }
+              ],
+              "location": "Holiday.iFamily(int,int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1498450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Holiday.init()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Booking Hotel Tickets",
+        "description": "",
+        "id": "booking-tickets;booking-hotel-tickets",
+        "after": [
+          {
+            "result": {
+              "duration": 1141331,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Holiday.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2121809,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I want to book hotel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hotel",
+                  "offset": 15
+                }
+              ],
+              "location": "Holiday.iBook(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 829439,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I search online",
+            "match": {
+              "location": "Holiday.i_search_online()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3067726,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should get hotel below 200 USD per night",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "Holiday.i_should_get_hotel_below_USD_per_night(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1782609,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I want a beach facing hotel",
+            "match": {
+              "location": "Holiday.i_want_a_beach_facing_hotel()"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookingTickets"
+          },
+          {
+            "name": "@BookHotelTickets"
+          }
+        ]
+      }
+    ],
+    "name": "Booking Tickets",
+    "description": "  I want to book air and hotel tickets for my holidays",
+    "id": "booking-tickets",
+    "keyword": "Feature",
+    "uri": "D:/Whizdom-Trainings/Online Training Workspace/Recording_Dec17/CucumberBasics/src/test/resources/com/qtpselenium/cucumber/booking.feature",
+    "tags": [
+      {
+        "name": "@BookingTickets",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

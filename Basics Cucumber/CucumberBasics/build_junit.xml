@@ -1,0 +1,140 @@
+<project name="java-helloworld" basedir="." default="runcukes">
+    <property name="repo" value="https://oss.sonatype.org/content/repositories/releases"/>
+	
+    <property name="ws.home" value="${basedir}"/>
+    <property name="test.dest" value="${ws.home}/build"/>
+	<property name="ng.result" value="test-output"/>
+	<property name="test.dest" value="${ws.home}/build"/>
+
+    <!-- To figure out compatible combinations of versions, you should examine dependencies in the Maven POM files -->
+    <property name="cucumber-core.version" value="2.3.1-SNAPSHOT"/>
+    <property name="cucumber-java.version" value="2.3.1-SNAPSHOT"/>
+    <property name="cucumber-jvm-deps.version" value="1.0.6"/>
+	<property name="cucumber-junit.version" value="2.3.1"/>
+    <property name="cucumber-html.version" value="0.2.6"/>
+    <property name="gherkin.version" value="5.0.0"/>
+    <property name="junit.version" value="4.12"/>
+    <property name="hamcrest.version" value="1.3"/>
+	<property name="tag-expressions.version" value="1.1.1"/>
+	<property name="assertj-core.version" value="3.10.0"/>
+
+    <property name="jars" value="lib"/>
+
+    <target name="download">
+        <mkdir dir="${jars}"/>
+        <!--get src="${user.home}/.m2/repository/io/cucumber/cucumber-core/${cucumber-core.version}/cucumber-core-${cucumber-jvm.version}.jar"
+             dest="${jars}/cucumber-core-${cucumber-core.version}.jar"/-->
+        <copy file="${user.home}/.m2/repository/io/cucumber/cucumber-core/${cucumber-core.version}/cucumber-core-${cucumber-core.version}.jar" 
+        	 todir="${jars}"/>
+        <copy file="${user.home}/.m2/repository/io/cucumber/cucumber-java/${cucumber-java.version}/cucumber-java-${cucumber-java.version}.jar"
+        	todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/io/cucumber/cucumber-jvm-deps/${cucumber-jvm-deps.version}/cucumber-jvm-deps-${cucumber-jvm-deps.version}.jar"
+    		todir="${jars}"/>	        
+    	<copy file="${user.home}/.m2/repository/io/cucumber/cucumber-junit/${cucumber-junit.version}/cucumber-junit-${cucumber-junit.version}.jar"
+    		todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/info/cukes/cucumber-html/${cucumber-html.version}/cucumber-html-${cucumber-html.version}.jar"
+    		todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/io/cucumber/gherkin/${gherkin.version}/gherkin-${gherkin.version}.jar"
+    		todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/junit/junit/${junit.version}/junit-${junit.version}.jar"
+    		todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/org/hamcrest/hamcrest-core/${hamcrest.version}/hamcrest-core-${hamcrest.version}.jar"
+    		todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/io/cucumber/tag-expressions/${tag-expressions.version}/tag-expressions-${tag-expressions.version}.jar"
+        	todir="${jars}"/>
+    	<copy file="${user.home}/.m2/repository/org/assertj/assertj-core/${assertj-core.version}/assertj-core-${assertj-core.version}.jar"
+    	      todir="${jars}"/>
+    	       
+    </target>
+
+    <target name="classpath" depends="download">
+        <path id="classpath">
+            <fileset dir="${jars}">
+                <include name="**/*.jar"/>
+            </fileset>
+            <pathelement location="target/classes"/>
+            <pathelement location="target/test-classes"/>
+            <pathelement location="src/test/resources"/>
+        </path>
+    </target>
+
+    <target name="compile" depends="classpath">
+        <mkdir dir="target/classes"/>
+        <javac srcdir="src" destdir="target/classes" classpathref="classpath" includeantruntime="false"/>
+    </target>
+
+    <target name="compile-test" depends="compile,classpath">
+        <mkdir dir="target/test-classes"/>
+        <javac srcdir="src/test/java" destdir="target/test-classes" classpathref="classpath" includeantruntime="false"/>
+    </target>
+            <!-- run -->
+    <target name="run-testng" depends="compile">
+       <testng classpath="${classpath}:${test.dest}" suitename="Rediff">	
+            <xmlfileset dir="${ws.home}" includes="src/test/resources/testng.xml"/>
+        </testng>
+                <!--
+                <testng classpath="${test.classpath}:${test.dest}" groups="fast">
+                    <classfileset dir="${test.dest}" includes="example1/*.class"/>
+                </testng>
+                -->
+    </target>
+                	
+    <target name="runcukes-junit" depends="compile-test">
+      <junit failureproperty="junit.failure" fork="yes" forkmode="once">
+	<classpath refid="classpath"/>
+	<test name="cucumber.examples.java.helloworld.RunCukesTest" haltonfailure="no">
+	  <formatter type="plain" usefile="false"/>
+	</test>
+      </junit>
+    </target>
+
+    <target name="runcukes" depends="compile-test">
+        <mkdir dir="target/cucumber-junit-report"/>
+        <java classname="cucumber.api.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+        	<classpath refid="classpath"/>
+        	            
+    	    <arg value="--glue"/>
+        	<arg value="com.qtpselenium.cucumber"/>
+        	<arg value="src/test/resources"/>
+        	<arg value="--plugin"/>
+        	<arg value="pretty"/> 
+        	<arg value="--plugin"/>
+        	<arg value="html:target/html"/>
+        	<arg value="--plugin"/>
+        	<arg value="json:target/report.json"/>
+        	<arg value="--plugin"/>
+        	<arg value="junit:target/junit.xml"/>
+        	<arg value="--no-dry-run"/>
+        	<arg value="--no-strict"/>
+        	<arg value="--monochrome"/>
+        	<arg value="--tags"/>
+        	<arg value="@BookAirTickets,@BookHotelTickets,@Registeration" />
+        	
+        	
+
+        </java>
+
+        <junitreport todir="target/cucumber-junit-report">
+            <fileset dir="target">
+                <include name="cucumber-junit-report.xml"/>
+            </fileset>
+            <report format="frames" todir="target/cucumber-junit-report"/>
+        </junitreport>
+
+        <fail message="Cucumber failed">
+            <condition>
+                <not>
+                    <equals arg1="${cucumber.exitstatus}" arg2="0"/>
+                </not>
+            </condition>
+        </fail>
+    </target>
+
+    <target name="clean">
+        <delete dir="target"/>
+    </target>
+
+    <target name="clobber" depends="clean">
+        <delete dir="${jars}"/>
+    </target>
+</project>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I live in Moscow (PASSED : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I have a family of 2 adults and 2 kids (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to book hotel (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I search online (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I should get hotel below 200 USD per night (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want a beach facing hotel (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I live in Moscow (PASSED : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I have a family of 2 adults and 2 kids (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to book flight tickets (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Adult names are (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I go to travel agent (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I ask him to book air tickets from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to reach in 18 hrs (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I am on gmail.com registeration page (PASSED : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter user1 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter pass1 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter 2222222222 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">regiteration should be success (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I am on gmail.com registeration page (PASSED : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter user2 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter pass2 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I enter 3333333333 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">regiteration should be failure (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="20742" started-at="2018-08-05T11:44:22Z" finished-at="2018-08-05T11:44:42Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="My Tests" duration-ms="20742" started-at="2018-08-05T11:44:22Z" finished-at="2018-08-05T11:44:42Z">
+      <class name="com.qtpselenium.cucumber.CucumberProjectTestngRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="setUpClass" is-config="true" duration-ms="238" started-at="2018-08-05T11:44:22Z" finished-at="2018-08-05T11:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="runScenario" duration-ms="5053" started-at="2018-08-05T11:44:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-05T11:44:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Booking Hotel Tickets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Tickets"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I live in Moscow (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I have a family of 2 adults and 2 kids (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to book hotel (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I search online (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I should get hotel below 200 USD per night (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want a beach facing hotel (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="runScenario" duration-ms="5067" started-at="2018-08-05T11:44:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-05T11:44:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Book Air Tickets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Tickets"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I live in Moscow (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I have a family of 2 adults and 2 kids (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to book flight tickets (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Adult names are (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I go to travel agent (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I ask him to book air tickets from 21st Jan 2018 to 30th Jan 2018 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to reach in 18 hrs (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="runScenario" duration-ms="5055" started-at="2018-08-05T11:44:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-05T11:44:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register user on Gmail.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registering User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on gmail.com registeration page (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter user1 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter pass1 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter 2222222222 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">regiteration should be success (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="runScenario" duration-ms="5019" started-at="2018-08-05T11:44:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-05T11:44:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register user on Gmail.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registering User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I am on gmail.com registeration page (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter user2 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter pass2 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I enter 3333333333 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">regiteration should be failure (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qtpselenium.cucumber.CucumberProjectTestngRunner@5a01ccaa]" name="tearDownClass" is-config="true" duration-ms="149" started-at="2018-08-05T11:44:42Z" finished-at="2018-08-05T11:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qtpselenium.cucumber.CucumberProjectTestngRunner -->
+    </test> <!-- My Tests -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>

@@ -1,0 +1,204 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5005617482,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I live in Moscow",
+            "match": {
+              "location": "Holiday.i_live_in_Moscow()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2180262,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I want to travel to Hawai from 21st Jan 2018 to 30th Jan 2018",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21st Jan 2018",
+                  "offset": 31
+                },
+                {
+                  "val": "30th Jan 2018",
+                  "offset": 48
+                }
+              ],
+              "location": "Holiday.iTravel(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1645650,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I have a family of 2 adults and 2 kids",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                },
+                {
+                  "val": "2",
+                  "offset": 32
+                }
+              ],
+              "location": "Holiday.iFamily(int,int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Book Air Tickets",
+        "description": "",
+        "id": "booking-tickets;book-air-tickets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 755198,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I want to book flight tickets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "flight tickets",
+                  "offset": 15
+                }
+              ],
+              "location": "Holiday.iBook(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2414928,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Adult names are",
+            "match": {
+              "location": "Holiday.adult_names_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Tom"
+                ]
+              },
+              {
+                "cells": [
+                  "Frank"
+                ]
+              },
+              {
+                "cells": [
+                  "Henry"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 511999,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I go to travel agent",
+            "match": {
+              "location": "Holiday.iGo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1131517,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I ask him to book air tickets from 21st Jan 2018 to 30th Jan 2018",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21st Jan 2018",
+                  "offset": 35
+                },
+                {
+                  "val": "30th Jan 2018",
+                  "offset": 52
+                }
+              ],
+              "location": "Holiday.iBookAir(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 500906,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I want to reach in 18 hrs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "18",
+                  "offset": 19
+                }
+              ],
+              "location": "Holiday.iReach(int)"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookingTickets"
+          },
+          {
+            "name": "@BookAirTickets"
+          }
+        ]
+      }
+    ],
+    "name": "Booking Tickets",
+    "description": "  I want to book air and hotel tickets for my holidays",
+    "id": "booking-tickets",
+    "keyword": "Feature",
+    "uri": "D:/Whizdom-Trainings/Online Training Workspace/Recording_Dec17/CucumberBasics/src/test/resources/com/qtpselenium/cucumber/booking.feature",
+    "tags": [
+      {
+        "name": "@BookingTickets",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

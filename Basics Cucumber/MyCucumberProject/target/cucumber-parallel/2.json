@@ -1,0 +1,224 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2641096019,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I live in London",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 10
+                }
+              ],
+              "location": "MyHoliday.i_live(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 748798,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I want to go on a holiday",
+            "match": {
+              "location": "MyHoliday.i_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 855130335,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "We are 3 adults",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 7
+                }
+              ],
+              "location": "MyHoliday.we_are(int,String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Adult1",
+                  "Adult2",
+                  "Adult3"
+                ]
+              },
+              {
+                "cells": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "cells": [
+                  "20",
+                  "30",
+                  "40"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 422333392,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHoliday.beforeScenario()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "I want to book hotel",
+        "description": "",
+        "id": "going-on-holiday;i-want-to-book-hotel",
+        "after": [
+          {
+            "result": {
+              "duration": 74240,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHoliday.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 951891,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "We want to book from 10th Feb 2019 to 20th Feb 2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10th Feb 2019",
+                  "offset": 21
+                },
+                {
+                  "val": "20th Feb 2019",
+                  "offset": 38
+                }
+              ],
+              "location": "MyHoliday.we_want_to_book(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 594345,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I go to travel agent",
+            "match": {
+              "location": "MyHoliday.i_go()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1167784,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "He should be able to help me in a budget of 1000 USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 44
+                }
+              ],
+              "location": "MyHoliday.he_should(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 536745,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "He should provide me option to cancel",
+            "match": {
+              "location": "MyHoliday.he_should_provide()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 483839,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "He should not ask for advance more than 300 USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 40
+                }
+              ],
+              "location": "MyHoliday.he_should_not(int)"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotelAndFlights"
+          },
+          {
+            "name": "@BookHotel"
+          }
+        ]
+      }
+    ],
+    "name": "Going on holiday",
+    "description": "\tI want to book flight tickets and a hotel",
+    "id": "going-on-holiday",
+    "keyword": "Feature",
+    "uri": "D:/Whizdom-Trainings/Online Training Workspace/Recording_Dec17/MyCucumberProject/src/test/resources/features/holiday.feature",
+    "tags": [
+      {
+        "name": "@BookHotelAndFlights",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2501969275,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I live in London",
+            "match": {
+              "arguments": [
+                {
+                  "val": "London",
+                  "offset": 10
+                }
+              ],
+              "location": "MyHoliday.i_live(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 942505,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I want to go on a holiday",
+            "match": {
+              "location": "MyHoliday.i_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683044942,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "We are 3 adults",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 7
+                }
+              ],
+              "location": "MyHoliday.we_are(int,String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Adult1",
+                  "Adult2",
+                  "Adult3"
+                ]
+              },
+              {
+                "cells": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "cells": [
+                  "20",
+                  "30",
+                  "40"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 674318775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHoliday.beforeScenario()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "I want to book Flight",
+        "description": "",
+        "id": "going-on-holiday;i-want-to-book-flight;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 87040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHoliday.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 818345,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "We want to book flight to Hawai on 10th Feb 2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hawai",
+                  "offset": 26
+                },
+                {
+                  "val": "10th Feb 2019",
+                  "offset": 35
+                }
+              ],
+              "location": "MyHoliday.want_flight(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531199,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Return Flight on 20th Feb 2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20th Feb 2019",
+                  "offset": 17
+                }
+              ],
+              "location": "MyHoliday.returnFlight(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotelAndFlights"
+          },
+          {
+            "name": "@BookFlight"
+          }
+        ]
+      }
+    ],
+    "name": "Going on holiday",
+    "description": "\tI want to book flight tickets and a hotel",
+    "id": "going-on-holiday",
+    "keyword": "Feature",
+    "uri": "D:/Whizdom-Trainings/Online Training Workspace/Recording_Dec17/MyCucumberProject/src/test/resources/features/holiday.feature",
+    "tags": [
+      {
+        "name": "@BookHotelAndFlights",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

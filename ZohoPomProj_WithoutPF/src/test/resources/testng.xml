@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite"  parallel = "tests">
+    <test name="Login Test">
+     <classes>
+        <class name="com.zoho.testcases.LoginTest"/>
+    </classes>
+    </test>
+    
+    <test name="Create Lead Test">
+     <classes>
+        <class name="com.zoho.testcases.CreateLeadTest"/>
+    </classes>
+    </test>
+    
+    <test name="Create Task Test">
+     <classes>
+        <class name="com.zoho.testcases.CreateTaskTest"/>
+    </classes>
+    </test>
+</suite>

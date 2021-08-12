@@ -1,0 +1,30 @@
+Cucumber Junit runner
+Junit build.xml
+
+Testng Runner
+Running from testng.xml
+Testng Build.xml
+
+Parallel Execution of tests in Junit
+Parallel Execution of tests in TestNG
+
+Re-record module
+
+Custom formatter
+https://automationrhapsody.com/create-cucumber-jvm-custom-formatter/
+
+New features in cucumber 3.0
+.............................
+Implementing other tests
+Running from Junit runner
+Junit build.xml
+
+Running from  Testng runner
+Testng build.xml
+
+Emailing reports
+Integration with Jenkins
+
+Custom Runners
+http://mkolisnyk.blogspot.com/2015/05/ploblem-solved-cucumber-jvm-running.html
+

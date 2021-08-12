@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  My Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>My Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 18 11:06:52 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1821 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qtpselenium.cucumber.MyTestngRunner.runScenario()'><b>runScenario</b><br>Test class: com.qtpselenium.cucumber.MyTestngRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario", "I want to shop"<br/>
+<a href="#Output-2089016471" onClick='toggleBox("Output-2089016471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089016471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089016471">
+<div "result">I go to website www.ebay.com (PASSED : 0s)</div><br/>
+<div "result">I search for shirts (PASSED : 0s)</div><br/>
+<div "result">I add a shirt in cart (PASSED : 0s)</div><br/>
+<div "result">The cart item count should increase (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qtpselenium.cucumber.MyTestngRunner@5a01ccaa</td></tr>
+<tr>
+<td title='com.qtpselenium.cucumber.MyTestngRunner.runScenario()'><b>runScenario</b><br>Test class: com.qtpselenium.cucumber.MyTestngRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to book hotel", "Going on holiday"<br/>
+<a href="#Output-273077527" onClick='toggleBox("Output-273077527", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273077527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273077527">
+<div "result">I live in London (PASSED : 0s)</div><br/>
+<div "result">I want to go on a holiday (PASSED : 0s)</div><br/>
+<div "result">We are 3 adults (PASSED : 0s)</div><br/>
+<div "result">We want to book from 10th Feb 2019 to 20th Feb 2019 (PASSED : 0s)</div><br/>
+<div "result">I go to travel agent (PASSED : 0s)</div><br/>
+<div "result">He should be able to help me in a budget of 1000 USD (PASSED : 0s)</div><br/>
+<div "result">He should provide me option to cancel (PASSED : 0s)</div><br/>
+<div "result">He should not ask for advance more than 300 USD (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qtpselenium.cucumber.MyTestngRunner@5a01ccaa</td></tr>
+<tr>
+<td title='com.qtpselenium.cucumber.MyTestngRunner.runScenario()'><b>runScenario</b><br>Test class: com.qtpselenium.cucumber.MyTestngRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to book Flight", "Going on holiday"<br/>
+<a href="#Output-1659840424" onClick='toggleBox("Output-1659840424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1659840424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1659840424">
+<div "result">I live in London (PASSED : 0s)</div><br/>
+<div "result">I want to go on a holiday (PASSED : 0s)</div><br/>
+<div "result">We are 3 adults (PASSED : 0s)</div><br/>
+<div "result">We want to book flight to Hawai on 10th Feb 2019 (PASSED : 0s)</div><br/>
+<div "result">Return Flight on 20th Feb 2019 (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qtpselenium.cucumber.MyTestngRunner@5a01ccaa</td></tr>
+<tr>
+<td title='com.qtpselenium.cucumber.MyTestngRunner.runScenario()'><b>runScenario</b><br>Test class: com.qtpselenium.cucumber.MyTestngRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to book Flight", "Going on holiday"<br/>
+<a href="#Output-1681303515" onClick='toggleBox("Output-1681303515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681303515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681303515">
+<div "result">I live in London (PASSED : 0s)</div><br/>
+<div "result">I want to go on a holiday (PASSED : 0s)</div><br/>
+<div "result">We are 3 adults (PASSED : 0s)</div><br/>
+<div "result">We want to book flight to Bejing on 21st Apr 2019 (PASSED : 0s)</div><br/>
+<div "result">Return Flight on 25th Apr 2019 (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qtpselenium.cucumber.MyTestngRunner@5a01ccaa</td></tr>
+</table><p>
+</body>
+</html>

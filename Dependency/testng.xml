@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+	<run>
+	 <include name="sanity" />
+	 </run>			 
+</groups>
+  <test name="Booking">
+  		<groups>
+			<dependencies>
+				<group depends-on="pre" name="post"></group>
+				<!--  group depends-on="select" name="checkout"></group>
+				<group depends-on="checkout" name="confirm"></group-->
+			</dependencies>	
+		</groups>
+    <classes>
+      <class name="tests.Booking"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

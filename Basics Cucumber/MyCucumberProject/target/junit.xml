@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="1.261282">
+<testcase classname="I want to shop" name="Title of your scenario" time="0.220699">
+<system-out><![CDATA[Given I go to website www.ebay.com..........................................passed
+And I search for shirts.....................................................passed
+When I add a shirt in cart..................................................passed
+Then The cart item count should increase....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Going on holiday" name="I want to book hotel" time="1.011163">
+<system-out><![CDATA[Given I live in London......................................................passed
+And I want to go on a holiday...............................................passed
+And We are 3 adults.........................................................passed
+And We want to book from 10th Feb 2019 to 20th Feb 2019.....................passed
+When I go to travel agent...................................................passed
+Then He should be able to help me in a budget of 1000 USD...................passed
+And He should provide me option to cancel...................................passed
+But He should not ask for advance more than 300 USD.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Going on holiday" name="I want to book Flight" time="0.01369">
+<system-out><![CDATA[Given I live in London......................................................passed
+And I want to go on a holiday...............................................passed
+And We are 3 adults.........................................................passed
+And We want to book flight to Hawai on 10th Feb 2019........................passed
+And Return Flight on 20th Feb 2019..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Going on holiday" name="I want to book Flight 2" time="0.01573">
+<system-out><![CDATA[Given I live in London......................................................passed
+And I want to go on a holiday...............................................passed
+And We are 3 adults.........................................................passed
+And We want to book flight to Bejing on 21st Apr 2019.......................passed
+And Return Flight on 25th Apr 2019..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

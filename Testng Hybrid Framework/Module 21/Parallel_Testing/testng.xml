@@ -1,0 +1,20 @@
+<suite name="SuiteName" parallel="tests">
+	<test name="Test A" allow-return-values="true">
+		<classes>
+			<class name="testcases.TestA" />
+		</classes>
+	</test>
+	
+	<test name="Test B" allow-return-values="true">
+		<classes>
+			<class name="testcases.TestB" />
+		</classes>
+	</test>
+	
+	<test name="Test C" allow-return-values="true">
+		<classes>
+			<class name="testcases.TestC" />
+		</classes>
+	</test>
+</suite>
+

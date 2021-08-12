@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I live in London (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to go on a holiday (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">We are 3 adults (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">We want to book flight to Bejing on 21st Apr 2019 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Return Flight on 25th Apr 2019 (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5477" started-at="2018-08-18T05:49:41Z" finished-at="2018-08-18T05:49:47Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Parallel04IT@67b6d4ae]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="5477" started-at="2018-08-18T05:49:41Z" finished-at="2018-08-18T05:49:47Z">
+      <class name="Parallel04IT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel04IT@67b6d4ae]" name="setUpClass" is-config="true" duration-ms="733" started-at="2018-08-18T05:49:41Z" finished-at="2018-08-18T05:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Parallel04IT@67b6d4ae]" name="runScenario" duration-ms="3985" started-at="2018-08-18T05:49:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-18T05:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["I want to book Flight"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Going on holiday"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I live in London (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to go on a holiday (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">We are 3 adults (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">We want to book flight to Bejing on 21st Apr 2019 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Return Flight on 25th Apr 2019 (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel04IT@67b6d4ae]" name="tearDownClass" is-config="true" duration-ms="176" started-at="2018-08-18T05:49:46Z" finished-at="2018-08-18T05:49:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Parallel04IT -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
